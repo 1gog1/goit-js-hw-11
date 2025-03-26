@@ -33,3 +33,5 @@ function onFormSubmit(event) {
     })
     .catch(error => console.log(error));
 }
+
+console.log('Hello');
