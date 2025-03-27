@@ -4,6 +4,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { getImages } from './js/pixabay-api';
 import { clearGalleryList, renderGalleryList } from './js/render-functions';
 
+import './js/loader.js';
+
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', onFormSubmit);
@@ -33,5 +35,3 @@ function onFormSubmit(event) {
     })
     .catch(error => console.log(error));
 }
-
-console.log('Hello');
